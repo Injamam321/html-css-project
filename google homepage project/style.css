@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 10px 15px;
+}
+nav a{
+    font-size: 16px;
+    font-weight: 600;
+    color: gray;
+    text-decoration: none;
+    padding: 10px 14px;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+.gmail, .lab, .menu{
+    width: 40px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.menu:hover{
+    opacity: 0.7;
+}
