@@ -1,31 +1,85 @@
-*{
+/* General styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-
 }
-nav{
+
+/* Navigation Bar */
+nav {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     margin: 10px 15px;
 }
-nav a{
+nav a {
     font-size: 16px;
     font-weight: 600;
     color: gray;
     text-decoration: none;
     padding: 10px 14px;
 }
-nav a:hover{
+nav a:hover {
     text-decoration: underline;
 }
-.gmail, .lab, .menu{
+.gmail, .lab, .menu {
     width: 40px;
     padding: 5px;
     border-radius: 50%;
 }
-.menu:hover{
+.menu:hover {
     opacity: 0.7;
+}
+
+/* Header */
+header {
+    width: 60%;
+    margin: 90px auto 20px auto;
+    text-align: center;
+}
+.google-logo {
+    display: block;
+    margin: 0 auto;
+}
+.search-box {
+    width: 600px;
+    border: 1px solid black;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px 15px;
+    border-radius: 30px;
+    box-shadow: 5px 2px 10px rgba(128, 128, 128, 0.3);
+}
+.search-box input {
+    width: calc(100% - 50px);
+    border: none;
+    font-size: 16px;
+    padding: 13px;
+    border-radius: 25px;
+    outline: none;
+    padding-left: 50px;
+}
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: gray;
+    opacity: 0.6;
+}
+.voice-mic {
+    width: 22px;
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+}
+.google-camera {
+    width: 22px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
