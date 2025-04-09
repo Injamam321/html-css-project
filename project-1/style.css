@@ -5,7 +5,7 @@
 
 
 #navigation{
-    background-color: rgb(127, 197, 255);
+    background-color: darkblue;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,6 +17,7 @@
 #navigation > ul > li{
     list-style: none;
     margin: 0px 5px;
+    margin-left: -5px;
     padding: 15px 0px;
 }
 #navigation > ul > li >a{
@@ -24,16 +25,49 @@
     color: azure;
     font-size: 18px;
     border-right: 1px solid white;
-    padding: 15px 20px;
+    padding: 16px 20px;
+    transition: 0.5s;
 }
 #navigation > ul > li:first-child > a{
     border-left: 1px solid white;
 }
 #navigation > ul > li:hover > a{
-    background-color: brown;
+    background-color: goldenrod;
 }
 
 #logo > h2{
     color: white;
     margin-left: 15px;
+}
+
+/* dropdown menu code start here */
+.dropdown{
+    opacity: 0;
+    visibility: hidden;
+    background-color: dodgerblue;
+    text-align: center;
+    margin-top: 15px;
+    width: 187px;
+    position: absolute;
+    transition: 0.5s;
+}
+.dropdown > li{
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+.dropdown > li:hover{
+    background-color: goldenrod;
+}
+.dropdown > li:first-child{
+     border-top: 1px solid white;
+}
+.dropdown>li>a{
+    text-decoration: none;
+    color: white;
+}
+#navigation > ul >li:hover>.dropdown{
+    opacity: 1;
+    visibility: visible;
+
 }
